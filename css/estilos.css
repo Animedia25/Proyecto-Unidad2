@@ -1,0 +1,203 @@
+#contenido{
+  width: 100%;
+}
+#Seleccion{
+  font-size: 20px;
+  color: black;
+  text-decoration: line-through;
+}
+body{
+  width: 100%;
+  background-color: #02010a;
+}
+/*----------- INICIO HEADER --------------- */
+header{
+  background-color: #5b7989;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  animation: Slidein 2s;
+  float: left;
+
+}
+header h1{
+  font-family: "Dancing Script";
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px #02010a;
+}
+header nav{
+  padding-right: 30px;
+  text-align: center;
+  font-family: monospace;
+
+}
+header nav a{
+ color: white;
+  font-size: 20px;
+  font-family: "Dancing Script";
+text-decoration: none;
+}
+header nav a:visited{
+  color: white;
+}
+/*----------- FIN HEADER --------------- */
+
+/*-----------  IMAGEN PRINCIPAL--------------- */
+#foto1>img{
+  box-shadow: 0 0 2px #02010a;
+}
+#foto1{
+  background-color: #82c3a6;
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+  border: 1px solid black;
+  padding: 10px 10%;
+}
+#foto1 div{
+    padding-top: 10px;
+}
+#foto1 div img{
+  width: 100%;
+}
+/*-----------  FIN DE IMAGEN PRINCIPAL--------------- */
+
+/*-----------  CONTENEDOR DE IMAGENERES--------------- */
+#fotospar{
+  background-color:  #d5c75f;
+}
+#fotospar div{
+  width: 100%;
+  padding: 10px 0;
+}
+.foto2 >a{
+    padding: 0px 10%;
+}
+  .foto2 >a img{
+    width: 80%;
+  border: 2px solid black;
+}
+/*----------- FIN CONTENEDOR DE IMAGENES --------------- */
+
+/*----------- INICIO DE FOOTER --------------- */
+footer{
+  background-color: #C6D5C5;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+footer >section{
+  text-align: left;
+  font-style: italic;
+  width: 90%;
+  padding: 10px 5%;
+
+}
+.icono{
+  float: left;
+  height: 20px;
+}
+/*-----------  FIN DE FOOTER --------------- */
+
+/*-----------  EFECTOS Y ANIMACIONES--------------- */
+#fotoA:hover {
+  animation: animacion1 1s;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px #82c3a6;
+}
+@-webkit-keyframes animacion1 {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}
+#fotoB:hover{
+  animation: animacion2 1s;
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px #82c3a6;
+}
+@-webkit-keyframes animacion2{
+  from{
+    transform: translate(0,0);
+  }
+  to{
+      transform: translate(20px,-5px);
+  }
+}
+@-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+/*-----------  FIN DE EFECTO Y ANIMACIONES--------------- */
+
+/*----------- INICIO MEDIA QUERIES --------------- */
+@media (min-width:900px) {
+  #contenido{
+    width: 80%;
+    padding: 0 10%;
+  }
+  header{
+    background-color: #5b7989;
+    width: 100%;
+    float: left;
+    border-radius: 10px 10px 0 0;
+  }
+  header h1{
+    font-family: "Dancing Script";
+    float: left;
+    color: white;
+    padding-left: 20px;
+    text-shadow: 0 0 5px #02010a;
+  }
+  header nav{
+    padding-top: 20px;
+    padding-right: 30px;
+    float: right;
+    font-family: monospace;
+  }
+  #foto1{
+        background-color: #82c3a6;
+      width: 80%;
+      padding: 10px 10%;
+  }
+  #fotospar div{
+    width: 40%;
+    padding: 5px 5%;
+  }
+  #fotospar{
+    background-color:  #d5c75f;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row;
+    padding: 20px 0;
+  }
+  .foto2 >a{
+      padding: 0px 0%;
+  }
+  .foto2>a img{
+    width: 100%;
+  }
+  footer{
+    background-color: #C6D5C5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    padding: 0 10%;
+  }
+  footer >section{
+    text-align: left;
+    font-style: italic;
+    width: 20%;
+    padding: 10px 2.5%;
+
+  }
+}

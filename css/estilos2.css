@@ -1,0 +1,163 @@
+#contenido{
+  width: 100%;
+}
+
+body{
+  width: 100%;
+  background-color: #02010a;
+}
+#Seleccion{
+  font-size: 20px;
+  color: black;
+  text-decoration: line-through;
+}
+/* ------- HEADER ----- */
+header{
+  background-color: #5b7989;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  float: left;
+  animation: Slidein 2s;
+}
+header h1{
+  font-family: "Dancing Script";
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px #02010a;
+}
+header nav{
+
+  padding-right: 30px;
+  text-align: center;
+  font-family: monospace;
+}
+header nav a{
+ color: white;
+  font-size: 20px;
+  font-family: "Dancing Script";
+  text-decoration: none;
+}
+header nav a:visited{
+  color: white;
+}
+
+/* ------- FIN DE HEADER ----- */
+/* -------- GALERIA ------*/
+#Galeria{
+  width: 100%;
+  background-color:  #d5c75f;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid black;
+  padding: 20px 0;
+}
+section>div{
+  width: 80%;
+  padding: 5px 10%;
+}
+.Foto>img{
+  width: 100%;
+  box-shadow: 0 0 2px #02010a;
+}
+
+/* -------- FIN DE GALERIA ------*/
+
+/* EFECTOS DE FOTO*/
+.Foto:nth-child(1){
+  filter: blur(10px);
+}
+.Foto:nth-child(3){
+  filter: sepia(90%);
+}
+.Foto:nth-child(even){
+  filter: grayscale(100%);
+}
+/*  FIN EFECTOS DE FOTO*/
+
+/* ----------- FOOTER -------*/
+footer{
+  background-color: #C6D5C5;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+footer >section{
+  text-align: left;
+  font-style: italic;
+  width: 80%;
+  padding: 10px 10%;
+
+}
+@-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+.icono{
+  float: left;
+  height: 20px;
+}
+/* ----------- FIN DE FOOTER -------*/
+
+/* ----- MEDIA QUERIES   ----*/
+@media (min-width:900px) {
+  #contenido{
+    width: 90%;
+    padding: 0 5%;
+  }
+  header{
+    background-color: #5b7989;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    float: left;
+    margin-bottom: 0px;
+  }
+  header h1{
+    font-family: "Dancing Script";
+    float: left;
+    color: white;
+    padding-left: 20px;
+    text-shadow: 0 0 5px #02010a;
+  }
+  header nav{
+    padding-top: 20px;
+    padding-right: 30px;
+    float: right;
+    font-family: monospace;
+  }
+  #Galeria{
+    width: 100%;
+    background-color:  #d5c75f;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 10px;
+  }
+  section>div{
+    width: 25.3%;
+    padding: 5px 4%;
+  }
+  .Foto>img{
+    width: 100%;
+  }
+  footer{
+    background-color: #C6D5C5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    padding: 0 10%;
+  }
+  footer >section{
+    text-align: left;
+    font-style: italic;
+    width: 20%;
+    padding: 10px 2.5%;
+
+  }
+}
